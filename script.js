@@ -78,7 +78,6 @@ window.onload = function(){
       ]
     ]
     var app = document.getElementById("app")
-    console.log(app)
     var table = document.createElement("table")
     var tbody = document.createElement("tbody")
     app.appendChild(table)
@@ -87,9 +86,7 @@ window.onload = function(){
     var i = 0
     colors_ary.forEach(function(colors){
       var tr = document.createElement("tr")
-      tr.setAttribute("id", `colors-${i}`)
       tbody.appendChild(tr)
-      i += 1
       colors.forEach(function(color){
         var td = document.createElement("td")
         td.textContent = color
