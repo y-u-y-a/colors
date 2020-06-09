@@ -1,16 +1,22 @@
 {
-  "name": "colors",
-  "manifest_version": 2,
-  "description": "You can get color-code.",
-  "version": "1.0.0",
-  "permissions": [
-    "management",
-    "tabs"
-  ],
-  "browser_action": {
-    "default_title": "",
-    "default_icon": "images/color.png",
-    "default_popup": "index.html"
-  },
-  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+    "name": "colors",
+    "manifest_version": 2,
+    "version": "1.0.0",
+    "description": "You can get color-code .",
+    "icons": {
+        "16": "images/colors_16.png",
+        "48": "images/colors_48.png",
+        "128": "images/colors_128.png"
+    },
+    "browser_action": {
+        "default_title": "",
+        "default_popup": "code/index.html",
+        "default_icon": {
+            "19": "images/colors_48.png"
+        }
+    },
+    "permissions": [
+        "management",
+        "tabs"
+    ]
 }
